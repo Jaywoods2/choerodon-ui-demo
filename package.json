@@ -8,11 +8,15 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "0.19.1",
     "choerodon-ui": "^1.4.1",
+    "craco-less": "^1.18.0",
+    "less": "^4.1.1",
+    "less-loader": "^10.0.1",
     "mobx": "4.7.0",
     "mobx-react": "6.1.5",
     "mobx-react-lite": "1.5.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router": "^3.9.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"
   },
@@ -39,5 +43,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.3"
   }
 }
