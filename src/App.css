@@ -1,3 +1,6 @@
+@import '~choerodon-ui/dist/choerodon-ui.css';
+@import '~choerodon-ui/dist/choerodon-ui-pro.css';
+
 .App {
   text-align: center;
 }
