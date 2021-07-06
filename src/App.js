@@ -84,8 +84,8 @@ class App extends Component {
           </SubMenu>
         </Menu>
       </Sider>
-      <Layout style={{ padding: '0 5px 5px' ,minHeight: window.innerHeight-64}}>
-        <Content style={{ background: '#fff', padding: 24, margin: 0, minHeight: 280 }}>
+      <Layout style={{ paddingLeft: '5px' ,minHeight: window.innerHeight-64}}>
+        <Content style={{ background: '#fff', padding: 14, margin: 0, minHeight: 280 }}>
           <Card style={{ width: '100%' }}>
             <Steps size="small" current={1}>
                 <Step title="部署模式" />
@@ -95,9 +95,59 @@ class App extends Component {
                 <Step title="部署完成" />
               </Steps>
           </Card>
-          <Card style={{ width: '100%' , minHeight: window.innerHeight-200,marginTop: 2}}>
-            Content
+          <Card style={{ width: '100%' , maxHeight: window.innerHeight-200,marginTop: 2,overflowY: "scroll" }}>
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
+            <p>asdasdasda</p>Content
           </Card>
+          <div style={{ textAlign: 'center',marginTop:'15px' }}>汉得信息©技术中心-基础架构中心</div>
         </Content>
       </Layout>
     </Layout>
