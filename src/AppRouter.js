@@ -2,15 +2,19 @@ import React from 'react';
 import './App.css';
 import logo from './public/hand.png';
 import { Layout, Menu} from 'choerodon-ui';
-import { browserHistory, Router } from 'react-router'
+import {
+    BrowserRouter as Router,
+  } from "react-router-dom";
 import MenuSider from './menu'
-import HarborRoute from './basics/harbor/index'
-import MysqlRoute from './basics/mysql/index'
+import BasicRoute from './basics/index'
 
-const { Header, Content } = Layout;
+
+const { Header, Content,Footer } = Layout;
+
 
 function AppRouter() {
     return (
+        <Router>
             <Layout>
                 <Header className="header" style={{background: "#fdfdfd",marginBottom: "2px"}}>
                 <div className="logo" />
@@ -28,17 +32,15 @@ function AppRouter() {
                 </Header>
                 <Layout>
                 <MenuSider />
-                <Layout style={{ paddingLeft: '3px' ,minHeight: window.innerHeight-64}}>
+                <Layout style={{ paddingLeft: '3px' ,minHeight: window.innerHeight-128}}>
                     <Content style={{ background: '#fff', padding: 14, margin: 2, minHeight: 280 }}>
-                    <Router history={browserHistory}>
-                        {HarborRoute()}
-                        {MysqlRoute()}
-                    </Router>
-                    <div style={{ textAlign: 'center',marginTop:'15px' }}>汉得信息©技术中心-基础架构中心</div>
+                       <BasicRoute />
+                       <Footer style={{padding: '13px 0',height: '10px',width: '100%',background: '#fff' ,textAlign: 'center'}}>汉得信息©技术中心-基础架构中心</Footer>
                     </Content>
                 </Layout>
                 </Layout>
             </Layout>
+            </Router>
     )
 }
 

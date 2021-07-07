@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { Layout, Menu, Icon } from 'choerodon-ui';
-import { browserHistory } from 'react-router'
+import {
+  withRouter
+} from "react-router-dom";
 const { Sider } = Layout;
 const SubMenu = Menu.SubMenu;
 
@@ -12,10 +14,9 @@ class MenuSider extends Component {
         this.state = {}
       }
 
-
       onMenuItemClick=(item)=>{
         console.log(item);
-        browserHistory.push(item.key)
+        this.props.history.push(item.key)
       };
 
     render() {
@@ -37,9 +38,9 @@ class MenuSider extends Component {
               </span>
             }
           >
-            <Menu.Item key="/harbor">Harbor部署</Menu.Item>
-            <Menu.Item key="/mysql">Mysql部署</Menu.Item>
-            <Menu.Item key="3">Redis部署</Menu.Item>
+            <Menu.Item key="/basic/harbor">Harbor部署</Menu.Item>
+            <Menu.Item key="/basic/mysql">Mysql部署</Menu.Item>
+            <Menu.Item key="/basic/redis">Redis部署</Menu.Item>
             <Menu.Item key="4">RocketMQ部署</Menu.Item>
           </SubMenu>
           <SubMenu
@@ -77,4 +78,4 @@ class MenuSider extends Component {
     }
 }
 
-export default MenuSider;
+export default withRouter(MenuSider);
